@@ -1,3 +1,8 @@
+/**
+ * Author: Grayson Lorenz, 5/19/2014
+ **/
+
+
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -11,7 +16,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.*;
 
-@SuppressWarnings("serial")
 public class HelpDeskHelper extends JFrame{
 	//Fields
 	private JButton submitB;
