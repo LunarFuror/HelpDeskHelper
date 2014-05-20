@@ -1,3 +1,9 @@
+/**
+ * Author: Grayson Lorenz
+ * 5/20/2014
+ * Created to make taking call notes easier and more reliable.
+ **//
+
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -9,10 +15,8 @@ import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import javax.swing.*;
 
-@SuppressWarnings("serial")
 public class HelpDeskHelper extends JFrame{
 	//Fields
 	private JButton submitB;
@@ -91,7 +95,7 @@ public class HelpDeskHelper extends JFrame{
 		setTitle("Call Helper");
 		setSize(WIDTH, HEIGHT);
 		setVisible(true);
-  	setDefaultCloseOperation(EXIT_ON_CLOSE);
+  		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		Container grid = getContentPane();
 		grid.add(topP, BorderLayout.NORTH);
 		grid.add(descriptionP, BorderLayout.CENTER);
