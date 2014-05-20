@@ -1,4 +1,4 @@
 Java-Apps
 =========
 
-Java apps I wrote for either my convenience or fun.
+Java apps written for convenience or fun.
