@@ -33,11 +33,13 @@ public class HelpDeskHelper extends JFrame{
 	private DateFormat dateFormat;
 	private Date date;
 	private PrintWriter writer;
+	private int callNumber;
 	//size of window
 	private static final int WIDTH=400,HEIGHT=300;
 	
 	//The setup and go
 	public HelpDeskHelper(){
+		
 		//button instantiation
 		submitB = new JButton("Submit");
 		
@@ -65,8 +67,9 @@ public class HelpDeskHelper extends JFrame{
 		phoneP = new JPanel(new BorderLayout());
 		
 		//The rest of the instantiation
+		callNumber = 0;
 		submitHandler = new BHandler();			
-		dateFormat = new SimpleDateFormat("MM_dd_yyyy_HHmmss");
+		dateFormat = new SimpleDateFormat("MM_dd_yyyy");
 		date = new Date();	
 		
 		//Give the button a listener that we made
@@ -126,9 +129,10 @@ public class HelpDeskHelper extends JFrame{
 			nameBuffer = "";
 			name = nameTF.getText();
 			buffer = "";
+			callNumber ++;
 			
 			//set up date for file name use
-			theDate = dateFormat.format(date) + "_";
+			theDate = dateFormat.format(date) + "_" + callNumber + "_";
 			
 			
 			//set up name buffer. Takes in the name and puts _ where the spaces are for file name use.
